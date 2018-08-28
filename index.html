@@ -1,10 +1,334 @@
 <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Template</title>
 
-<html>
-<head>
-<title>��� ������ ��������!</title>
-</head>
-<body>
-������ � ������������� ���� ���� ����� ������!<br/>����� BR<br/><br/>��������� ��������
-</body> 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                    <span class="sr-only">Открыть навигацию</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Magisters</a>
+            </div>
+            <div class="collapse navbar-collapse" id="responsive-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Пункт 1</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Пункт 1</a></li>
+                            <li><a href="#">Пункт 2</a></li>
+                            <li><a href="#">Пункт 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Пункт 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Пункт 3</a></li>
+                    <li><a href="#">Пункт 4</a></li>
+                </ul>
+                <form action="" class="navbar-form navbar-right hidden-sm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="E-mail" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Пароль" value="">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-sign-in"></i> ВОЙТИ
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="carousel" class="carousel slide">
+        <!--Индикаторы слайдов-->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!--Слайды-->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/wm_cover.png" alt="">
+                <div class="carousel-caption">
+                    <h3>Первый слайд</h3>
+                    <p>Описание первого слайда</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/wm_cover.png" alt="">
+                <div class="carousel-caption">
+                    <h3>Второй слайд</h3>
+                    <p>Описание второго слайда</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/wm_cover.png" alt="">
+                <div class="carousel-caption">
+                    <h3>Третий слайд</h3>
+                    <p>Описание третьего слайда</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Стрелки переключения слайдов-->
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <h1>Название страницы</h1>
+            <p>
+                <a href="#" class="btn btn-default"><i class="fa fa-spinner fa-spin"></i></a>
+                <a href="#" class="btn btn-primary">Кнопка</a>
+                <a href="#" class="btn btn-success">Кнопка</a>
+                <a href="#" class="btn btn-warning">Кнопка</a>
+                <a href="#" class="btn btn-info">Кнопка</a>
+                <a href="#" class="btn btn-danger">Кнопка</a>
+                <a href="#" class="btn btn-link">Кнопка</a>
+            </p>
+            <p>
+               <a href="#" class="btn btn-primary btn-lg">Кнопка</a> 
+               <a href="#" class="btn btn-primary">Кнопка</a> 
+               <a href="#" class="btn btn-primary btn-sm">Кнопка</a> 
+               <a href="#" class="btn btn-primary btn-xs">Кнопка</a> 
+            </p>
+            <p>
+                <a href="#" class="btn btn-primary btn-lg btn-block active">Кнопка</a>
+                <a href="#" class="btn btn-primary btn-lg btn-block disabled">Кнопка</a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+           <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                </div>
+                <div class="btn-group btn-group-lg">
+                    <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                </div>
+                <div class="btn-group btn-group-lg">
+                    <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+            <br>
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+            <br>
+            <div class="btn-group-vertical">
+                <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-success">
+                    Выпадающее меню
+                </button>
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Ссылка Ссылка Ссылка Ссылка</a></li>
+                    <li><a href="#">Ссылка Ссылка Ссылка Ссылка</a></li>
+                    <li><a href="#">Ссылка Ссылка Ссылка Ссылка</a></li>
+                    <li><a href="#">Ссылка Ссылка Ссылка Ссылка</a></li>
+                    <li><a href="#">Ссылка Ссылка Ссылка Ссылка</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <br>
+                <div class="tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка 1</a></li>
+                        <li><a href="#tab-2" data-toggle="tab">Вкладка 2</a></li>
+                        <li><a href="#tab-3" data-toggle="tab">Вкладка 3</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab-1">
+                            <p>Параграф с текстом 1</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-2">
+                            <p>Параграф с текстом 2</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-3">
+                            <p>Параграф с текстом 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Спойлер</a>
+                <div class="collapse" id="spoiler-1">
+                    <div class="well">
+                        <p>Параграф с текстом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">Открыть 1-й слайд</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">Открыть 2-й слайд</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">Открыть 3-й слайд</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="progress">
+    			<div class="progress-bar progress-bar-primary" style="
+    				min-width: 2%;
+    				width: 10%;
+    			">
+    			</div>
+				<div class="progress-bar progress-bar-warning" style="
+    				min-width: 2%;
+    				width: 10%;
+    			">
+    			</div>
+				<div class="progress-bar progress-bar-danger" style="
+    				min-width: 2%;
+    				width: 10%;
+    			">
+    			</div>
+				<div class="progress-bar progress-bar-success" style="
+    				min-width: 2%;
+    				width: 10%;
+    			">
+    			</div>
+				<div class="progress-bar progress-bar-info" style="
+    				min-width: 2%;
+    				width: 10%;
+    			">
+    			</div>
+    		</div>
+    		<div class="progress">
+    			<div class="progress-bar progress-bar-success progress-bar-striped active" style="
+    				width: 50%;
+    			">
+    				
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Название окна</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Это модальное окно</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
